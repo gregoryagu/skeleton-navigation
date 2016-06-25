@@ -27,8 +27,19 @@ To run the app, follow these steps.
   jspm install -y
   ```
   >**Note:** Windows users, if you experience an error of "unknown command unzip" you can solve this problem by doing `npm install -g unzip` and then re-running `jspm install`.
+  
+6. Install the typings tool if you don't have it already.
+   ```shell
+   npm install -g typings
+   ```
+   
+7. Use the typings tool to get all type definition files. This will add a "typings" folder with the type definition files.
 
-6. Build the project:
+   ```shell
+   typings install
+   ```
+
+8. Build the project:
 
   ```shell
   gulp build
@@ -44,22 +55,22 @@ in the IDE.
 They both may be found
 [on this Microsoft page](https://www.microsoft.com/net/core#windows).
 
-7. Before you can run the .NET app, you must execute the following command:
+9. Before you can run the .NET app, you must execute the following command:
 
   ```shell
   dotnet restore
   ```
 
-8. To run the app, execute the following command:
+10. To run the app, execute the following command:
 
   ```shell
   dotnet run
   ```
   Or in Visual Studio just click on the Debug in the Browser option.
 
-9. If you want the changes you are making to be reflected in the browser you can run `gulp watch` in a second terminal window and refresh the page in your browser.
+11. If you want the changes you are making to be reflected in the browser you can run `gulp watch` in a second terminal window and refresh the page in your browser.
 
-10. Browse to [http://localhost:9000](http://localhost:9000) to see the app. You can make changes in the code found under `src` and the browser should auto-refresh itself as you save files. (Note: It's possible that a port other than 9000 will be used if there's already something running there. Double check the port number to be sure.)
+12. Browse to [http://localhost:9000](http://localhost:9000) to see the app. You can make changes in the code found under `src` and the browser should auto-refresh itself as you save files. (Note: It's possible that a port other than 9000 will be used if there's already something running there. Double check the port number to be sure.)
 
 ## Bundling
 
